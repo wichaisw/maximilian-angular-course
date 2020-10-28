@@ -9,12 +9,12 @@
       #serverNameInput
     >
     <label>Server Content</label>
-    <input type="text" class="form-control" [(ngModel)]="newServerContent">
-    <!-- <input 
+    <!-- <input type="text" class="form-control" [(ngModel)]="newServerContent"> -->
+    <input 
       type="text" 
       class="form-control" 
-      #newServerContent
-    > -->
+      #serverContentInput
+    >
     <br>
     <!-- use local reference, can only be used in template not inside TS code -->
     <!-- ให้มาทั้ง element และ attribute ทั้งหมด -->
@@ -25,7 +25,7 @@
     </button>
     <button 
       class="btn btn-primary" 
-      (click)="onAddBlueprint()">
+      (click)="onAddBlueprint(serverNameInput)">
       Add Server Blueprint
     </button>
   </div>
